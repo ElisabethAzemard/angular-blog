@@ -2,6 +2,8 @@
 
 <ul *ngIf="postCollection">
     <li *ngFor="let post of postCollection">
-        {{ post | json }}
+        <app-post
+            [post]="post"
+        ></app-post>
     </li>
 </ul>
